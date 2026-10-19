@@ -1,0 +1,92 @@
+[
+  {
+    "id": "old-tom-bourbon-clean",
+    "title": "Old Tom Distillery — clean bourbon label",
+    "expectation": "Everything matches the application. Should come back clean.",
+    "image": "old-tom-bourbon-clean.jpg",
+    "application": {
+      "applicationId": "TTB-2026-00141",
+      "beverageClass": "distilled_spirits",
+      "brandName": "OLD TOM DISTILLERY",
+      "classType": "Kentucky Straight Bourbon Whiskey",
+      "alcoholContentAbv": 45,
+      "netContents": "750 mL",
+      "bottlerName": "DISTILLED AND BOTTLED BY OLD TOM DISTILLERY",
+      "bottlerAddress": "BARDSTOWN, KENTUCKY",
+      "isImported": false,
+      "countryOfOrigin": ""
+    }
+  },
+  {
+    "id": "old-tom-bourbon-volume-mismatch",
+    "title": "Old Tom Distillery — wrong net contents",
+    "expectation": "Label reads 700 mL while the application says 750 mL.",
+    "image": "old-tom-bourbon-volume-mismatch.jpg",
+    "application": {
+      "applicationId": "TTB-2026-00142",
+      "beverageClass": "distilled_spirits",
+      "brandName": "OLD TOM DISTILLERY",
+      "classType": "Kentucky Straight Bourbon Whiskey",
+      "alcoholContentAbv": 45,
+      "netContents": "750 mL",
+      "bottlerName": "DISTILLED AND BOTTLED BY OLD TOM DISTILLERY",
+      "bottlerAddress": "BARDSTOWN, KENTUCKY",
+      "isImported": false,
+      "countryOfOrigin": ""
+    }
+  },
+  {
+    "id": "harbor-light-gin-bad-warning",
+    "title": "Harbor Light Gin — defective health warning",
+    "expectation": "Heading is title case, not bold, and one word of the statement was changed.",
+    "image": "harbor-light-gin-bad-warning.jpg",
+    "application": {
+      "applicationId": "TTB-2026-00143",
+      "beverageClass": "distilled_spirits",
+      "brandName": "HARBOR LIGHT",
+      "classType": "London Dry Gin",
+      "alcoholContentAbv": 47,
+      "netContents": "750 mL",
+      "bottlerName": "DISTILLED AND BOTTLED BY HARBOR LIGHT SPIRITS CO.",
+      "bottlerAddress": "PORTLAND, MAINE",
+      "isImported": false,
+      "countryOfOrigin": ""
+    }
+  },
+  {
+    "id": "stones-throw-rye-case-difference",
+    "title": "Stone's Throw Rye — capitalisation difference only",
+    "expectation": "Label prints the brand in caps, application uses title case. Same product, so this should be flagged for a look rather than failed.",
+    "image": "stones-throw-rye-case-difference.jpg",
+    "application": {
+      "applicationId": "TTB-2026-00144",
+      "beverageClass": "distilled_spirits",
+      "brandName": "Stone's Throw",
+      "classType": "Straight Rye Whiskey",
+      "alcoholContentAbv": 52.5,
+      "netContents": "750 mL",
+      "bottlerName": "Bottled by Stone's Throw Distilling",
+      "bottlerAddress": "Louisville, Kentucky",
+      "isImported": false,
+      "countryOfOrigin": ""
+    }
+  },
+  {
+    "id": "cedar-ridge-merlot-photographed",
+    "title": "Cedar Ridge Merlot — photographed at an angle",
+    "expectation": "Imported wine, image is tilted and slightly soft to exercise the vision model.",
+    "image": "cedar-ridge-merlot-photographed.jpg",
+    "application": {
+      "applicationId": "TTB-2026-00145",
+      "beverageClass": "wine",
+      "brandName": "CEDAR RIDGE",
+      "classType": "Merlot",
+      "alcoholContentAbv": 13.5,
+      "netContents": "750 mL",
+      "bottlerName": "IMPORTED BY CEDAR RIDGE IMPORTS",
+      "bottlerAddress": "NAPA, CALIFORNIA",
+      "isImported": true,
+      "countryOfOrigin": "Chile"
+    }
+  }
+]
